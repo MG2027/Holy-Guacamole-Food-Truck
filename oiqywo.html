@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kawaii June Calendar</title>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: 'Arial', sans-serif;
+      font-size: 14px;
+    }
+    th, td {
+      text-align: center;
+      padding: 10px;
+      background-color: #D5F5E3;
+      border-bottom: 1px solid #FFF;
+    }
+    th {
+      background-color: #2ECC71;
+      color: #FFF;
+      font-weight: bold;
+    }
+    td {
+      background-color: #82E0AA;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .special-event {
+      background-color: #27AE60;
+      position: relative;
+    }
+    .special-event .event-tooltip {
+      position: absolute;
+      top: -30px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #FFF;
+      padding: 5px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      visibility: hidden;
+      opacity: 0;
+      transition: visibility 0s, opacity 0.3s ease;
+    }
+    .special-event:hover {
+      background-color: #229954;
+    }
+    .special-event:hover .event-tooltip {
+      visibility: visible;
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <thead>
+      <tr>
+        <th>Sunday</th>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+        <th>Saturday</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="special-event">
+          31<br>
+          <span class="event-tooltip">Special Event on Day 31! Falcon Cove Middle School</span>
+        </td>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td class="special-event">
+          4<br>
+          <span class="event-tooltip">Special Event on Day 4! Tampa Bay</span>
+        </td>
+        <td>5</td>
+        <td>6</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>8</td>
+        <td class="special-event">
+          9<br>
+          <span class="event-tooltip">Special Event on Day 9! Miami, Doral</span>
+        </td>
+        <td>10</td>
+        <td>11</td>
+        <td>12</td>
+        <td>13</td>
+      </tr>
+      <tr>
+        <td>14</td>
+        <td>15</td>
+        <td>16</td>
+        <td>17</td>
+        <td class="special-event">
+          18<br>
+          <span class="event-tooltip">Special Event on Day 18! Flying Squirrls Trampoline</span>
+        </td>
+        <td>19</td>
+        <td>20</td>
+      </tr>
+      <tr>
+        <td>21</td>
+        <td>22</td>
+        <td>23</td>
+        <td>24</td>
+        <td>25</td>
+        <td>26</td>
+        <td>27</td>
+      </tr>
+      <tr>
+        <td>28</td>
+        <td>29</td>
+        <td class="special-event">
+          30<br>
+          <span class="event-tooltip">Special Event on Day 30! Fort Lauderdale Beach</span>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>

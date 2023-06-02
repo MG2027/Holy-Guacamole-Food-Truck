@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>!Holy Guacamole!</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/foodtruck.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Foldit&family=Gruppo&family=Poiret+One&family=Space+Grotesk:wght@300&family=Space+Mono&family=Unbounded:wght@500&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    h1 {
+      color: #008000;
+      text-align: center;
+      padding: 20px;
+      font-size: 36px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    }
+    .review-form {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #FFFFFF;
+      border: 5px solid #006400;
+      border-radius: 10px;
+      box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    .form-group label {
+      color: #008000;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 5px;
+      border: 1px solid #008000;
+      transition: border-color 0.3s ease-in-out;
+    }
+    .form-group input:hover,
+    .form-group textarea:hover {
+      border-color: #00FF00;
+    }
+    .form-group input:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-color: #00FF00;
+      box-shadow: 0px 0px 8px rgba(0, 255, 0, 0.3);
+    }
+    .form-group select {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 5px;
+      border: 1px solid #008000;
+      transition: border-color 0.3s ease-in-out;
+      background-color: #FFF;
+    }
+    .form-group select:hover,
+    .form-group select:focus {
+      border-color: #00FF00;
+    }
+    .form-group button {
+      background-color: #008000;
+      color: #FFFFFF;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease-in-out;
+    }
+    .form-group button:hover {
+      background-color: #00FF00;
+    }
+    body {
+      background-color: #BCD4A7;
+      background-size: cover;
+      height: 100vh;
+      background-position: left;
+      font-family: 'Gruppo', sans-serif;
+      font-weight: 1000;
+      color: white;
+    }
+    
+    .ribbon {
+      position: relative;
+      background-color:  #FFFFF0; /* Red color for the ribbon */
+      height: 60px;
+	  top: 100px;
+    }
+    
+    .logo {
+      position: relative;
+      top: -20px; /* Adjust this value to control the overlap of the logo */
+      display: flex;
+      justify-content: center;
+    }
+    
+    .logo img {
+      height: 200px;
+      width: 220px;
+    }
+    
+    nav {
+      position: relative;
+      top: -60px; /* Adjust this value to align the nav links with the ribbon */
+    }
+   
+  </style>
+</head>
+
+<body>
+  <div class="ribbon"></div>
+  
+  <div class="logo">
+    <img src="images/logos.png" alt="mylogo">
+  </div>
+  
+  <nav>
+    <ul>
+      <li style="left: 170px; top: -110px;">
+        <a href="home.html">Home</a>
+        <ul class="dropdown">
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </li>
+      <li style="left: 220px; top: -110px;">
+        <a href="menu.html">Menu Items</a>
+        <ul class="dropdown">
+          <li><a href="order.html">Order</a></li>
+          <li><a href="makeyourown.html">Make Your Own!</a></li>
+        </ul>
+      </li>
+      <li style="left: 600px; top: -110px;">
+        <a href="calender.html">Calender</a>
+        <ul class="dropdown">
+          <li><a href="#">Request A Location</a></li>
+        </ul>
+      </li>
+      <li style="left: 650px; top: -110px;">
+        <a href="review.html">Reviews</a>
+        <ul class="dropdown">
+          <li><a href="writeareview.html">Write A Review</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</body>
+<body>
+  
+  <div class="review-form">
+    <form>
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="rating">Rating:</label>
+        <select id="rating" name="rating" required>
+          <option value="5">⭐⭐⭐⭐⭐</option>
+          <option value="4">⭐⭐⭐⭐</option>
+          <option value="3">⭐⭐⭐</option>
+          <option value="2">⭐⭐</option>
+          <option value="1">⭐</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="review">Review:</label>
+        <textarea id="review" name="review" rows="5" required></textarea>
+      </div>
+
+      <div class="form-group">
+        <button type="submit">Submit Review</button>
+      </div>
+	  
+    </form>
+  </div>
+</body>
+</html>

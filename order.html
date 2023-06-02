@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>!Holy Guacamole!</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/foodtruck.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Foldit&family=Gruppo&family=Poiret+One&family=Space+Grotesk:wght@300&family=Space+Mono&family=Unbounded:wght@500&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    
+    body {
+      background-color: #BCD4A7;
+      background-size: cover;
+      height: 100vh;
+      background-position: left;
+      font-family: 'Gruppo', sans-serif;
+      font-weight: 1000;
+      color: white;
+    }
+    
+    .ribbon {
+      position: relative;
+      background-color:  #FFFFF0; /* Red color for the ribbon */
+      height: 60px;
+	  top: 100px;
+    }
+    
+    .logo {
+      position: relative;
+      top: -20px; /* Adjust this value to control the overlap of the logo */
+      display: flex;
+      justify-content: center;
+    }
+    
+    .logo img {
+      height: 200px;
+      width: 220px;
+    }
+    
+    nav {
+      position: relative;
+      top: -60px; /* Adjust this value to align the nav links with the ribbon */
+    }
+     h1 {
+      text-align: center;
+    }
+    
+    form {
+      margin-top: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    label {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    
+    input[type="text"],
+    select {
+      width: 300px;
+      padding: 5px;
+      margin-bottom: 20px;
+    }
+    
+    input[type="submit"] {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }s
+   
+  </style>
+</head>
+
+<body>
+  <div class="ribbon"></div>
+  
+  <div class="logo">
+    <img src="images/logos.png" alt="mylogo">
+  </div>
+  
+  <nav>
+    <ul>
+      <li style="left: 170px; top: -110px;">
+        <a href="home.html">Home</a>
+        <ul class="dropdown">
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </li>
+      <li style="left: 220px; top: -110px;">
+        <a href="menu.html">Menu Items</a>
+        <ul class="dropdown">
+          <li><a href="order.html">Order</a></li>
+          <li><a href="makeyourown.html">Make Your Own!</a></li>
+        </ul>
+      </li>
+      <li style="left: 700px; top: -110px;">
+        <a href="calender.html">Calender</a>
+        <ul class="dropdown">
+          <li><a href="#">Request A Location</a></li>
+        </ul>
+      </li>
+      <li style="left: 750px; top: -110px;">
+        <a href="review.html">Reviews</a>
+        <ul class="dropdown">
+          <li><a href="writeareview.html">Write A Review</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</body>
+<div style="position: absolute; top: 200px; left: 600px;">
+<form action="https://formsubmit.co/el/bakece" method="POST" />
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="burritos">Burritos:</label>
+    <select id="burritos" name="burritos">
+      <option value="">Select a burrito</option>
+      <option value="Build Your Own!">Build Your Own! - $20.00</option>
+      <option value="Steak">Steak - $1.50</option>
+      <option value="Chicken">Chicken - $1.00</option>
+      <option value="Avocado">Avocado - $0.50</option>
+      <option value="Sour Cream">Sour Cream - $0.50</option>
+      <option value="Jalapeños">Jalapeños - $1.00</option>
+	  <option value="none">None</option>
+    </select>
+
+    <label for="drinks">Drinks:</label>
+    <select id="drinks" name="drinks">
+      <option value="">Select a drink</option>
+      <option value="Water">Water - $0.50</option>
+      <option value="Iced Tea">Iced Tea - $2.00</option>
+      <option value="Red Bull">Red Bull - $2.00</option>
+      <option value="Soft Drinks">Soft Drinks - $3.00</option>
+	  <option value="none">None</option>
+    </select>
+
+    <label for="salads">Salads:</label>
+    <select id="salads" name="salads">
+      <option value="">Select a salad</option>
+      <option value="Greek Salad">Greek Salad - $6.00</option>
+      <option value="Grilled Chicken">Grilled Chicken - $8.00</option>
+      <option value="Vegetarian Salad">Vegetarian Salad - $6.00</option>
+      <option value="Ceasar Salad">Ceasar Salad - $7.00</option>
+	  <option value="none">None</option>
+    </select>
+
+    <label for="sides">Sides:</label>
+    <select id="sides" name="sides">
+      <option value="">Select a side</option>
+      <option value="Bowl of Rice">Bowl of Rice - $6.00</option>
+      <option value="Salsa w/Chips">Salsa w/Chips - $3.00</option>
+      <option value="Churros">Churros - $3.00</option>
+      <option value="Sweet Potatoes">Sweet Potatoes - $5.00</option>
+      <option value="Baked Potatoes">Baked Potatoes - $4.00</option>
+      <option value="French Fries">French Fries - $2.00</option>
+	  <option value="none">None</option>
+    </select>
+
+    <input type="submit" value="Place Order">
+	</div>
+  </form>
+ 
+</body>
+
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title> Lots of Forms </title>
+	<meta charset="utf-8">
+</head>
+
+	<body style="background-color: lightblue;">
+		<main>
+			<h1> LOTS OF FORMS!!!!!! </h1>
+			<p> The <b> form element </b> contains a form on a web page. The &lt;form&gt; tag specifies the beginning of a form area. The closing &lt;/form&gt; tag specifies the end of a form area. There can be multiple forms on a web page, but they <b><mark> CANNOT BE NESTED INSIDE ONE ANOTHER. </b></mark> </p>
+			
+			<h1> Input </h1>
+			<p> The &lt;input&gt; configures a text box form control. The text box form control accepts text or numeric information such as names, e-mail addresses, phone numbers, and other text. </p>
+			
+			<form> 
+				Email: <input type: "text" required="required">
+			</form>
+			
+			<p> The type attribute declares what are acceptable inputs for this particular form. By giving type the value of text, you are instructing this form to only accept standard text. For example, someone could not upload a picture of their email address, they are forced to type it out. </p>
+			<p> The required attribute is new to HTML5 and makes it so that particular form is required to fill in before the user can progress forward. Think about any online form that you've filled out and if you missed a required piece of information it would inform you to go back and fill it in before you can progress. </p>
+			
+			<form>
+				Email: <input type="text" required="required">
+				<br><br>
+				<input type="submit">
+				<input type="reset">
+			</form>
+			
+			<p> The attribute type with value submit produces a button that when clicked will start the process of sending the inputted data to the desired location for the webmaster to make use of. </p>
+			<p> The attribute type with value reset produces a button that clears out the currently entered data.</p>
+			<p> From a style and visual perspective, if you want to put the label inside the box instead of outside set a placeholder attribute and then make it equal to what you want it to say. </p>
+			
+			<form>
+				<input type="text" placeholder="Enter Email">
+			</form>
+			
+			<h3> Practice: </h3>
+			<h3> <b><i><u> Join Our Newsletter </b></i></u> </h3>
+
+			<form>
+				<input type="text" required="required" placeholder="Enter E-Mail">
+				<br><br>
+				<input type="submit" placeholder="Sign Me Up!"> 
+				<input type="reset">
+			</form>
+			
+			<hr><hr>
+			
+			<h1> Check Box </h1>
+			<p> The <b><mark> check box</b> form control allows the user to select one or more of a group of predetermined items. The input element with type="checkbox" configures a check box. </p>
+			
+			<form>
+				Choose the browsers you use:
+				<br>
+				<input type="checkbox" value="yes"> Chrome
+				<br>
+				<input type="checkbox" value="yes"> Firefox
+				<br>
+				<input type="checkbox" value="yes"> Edge
+				<br>
+			</form>
+			
+			<h1> Radio Button </h1>
+			<p> The <b> <mark>radio button </b> form control allows the user to select exactly one (and only one) choice from a group of predetermined items. Each radio button in a group is given the same name attribute and a unique value attribute. Because the name attribute is the same, the elements are identified as part of a group by the browsers and only one may be selected. </p>
+			
+			<form>
+				Select your favorite browser: 
+				<br>
+				<input type="radio" name="favbrowser" value="Chrome"> Chrome
+				<br>
+				<input type="radio" name="favbrowser" value="Firefox">Firefox
+				<br>
+				<input type="radio" name="favbrowser" value="Edge"> Edge
+				<br>
+			</form>
+			
+			<hr><hr>
+			<h1> Scrolling Text Box </h1>
+
+			<p> The <b> <mark>scrolling text box </b> form control accepts free-form comments, questions, or descriptions. The &lt;textarea&gt; tag denotes the beginning of the scrolling text box and &lt;textarea&gt; tag denotes the end of the scrolling text box. </p>
+
+			<p> The attributes cols and rows control height and width of your comment box. Cols is short for columns and this controls your width. A Cols="40" will allow that row to contain 40 characters (text and spaces) within that row. Rows represents the height of the comment box. The bigger the number the bigger the box. </p>
+			
+			<form> 
+				Comments: 
+				<br>
+				<textarea cols="40" rows="5"> Enter your comments here </textarea>
+			</form>
+			
+			<hr><hr>
+			
+			<h1> Practice: </h1>
+			
+			<form> 
+				<b> Contact Customer Service </b>
+				<br><br>
+				<input type="text" placeholder="First Name" required="required">
+				<br><br>
+				<input type="text" placeholder="Last Name" required="required">
+				<br><br>
+				<input type="text" placeholder="E-Mail" required="required">
+				<br><br>
+				<input type="text" placeholder="Login" required="required">
+				<br><br>
+				<input type="password" placeholder="Password" required="required">
+				<br><br>
+				
+				What Issues Are You Having? Select All That Apply.
+				<br><br>
+				<input type="checkbox" value="yes"> Billing
+				<br>
+				<input type="checkbox" value="yes"> Shipping
+				<br>
+				<input type="checkbox" value="yes"> Problem with Product
+				<br><br>
+				Select Your Preferred Method of Contact:
+				<br><br>
+				<input type="radio" name="favcontact" value="Email"> Chrome
+				<br>
+				<input type="radio" name="favcontact" value="Text">Firefox
+				<br>
+				<input type="radio" name="favcontact" value="Phone Call"> Edge
+				<br><br>
+
+				Comments:
+				<br><br>
+				 <textarea cols="40" rows="8" >Please Describe Your Situation  </textarea>
+				<br><br>
+				<input type="submit">
+				<input type="reset">
+			</form>
+			
+			<hr><hr>
+			
+			<h1> Select Element </h1>
+			<p> The <b><mark> select element </b> contains and configures the select list form control. The &lt;select&gt; tag denotes the beginning of the select list. The closing &lt;/select&gt; tag denotes the end of the select list. </p>
+
+			<p> the <b><mark> option element </b> contains and configures the an option item displayed in the select list form control. The relationship between select and option for a list is similar to that of video and control. You start with a video tag and then encapsulate the source code within the video tag. The option tag also automatically starts the next tag on the next line, similar to a paragraph tag. </p>
+			
+			<h3> Example: </h3> 
+			
+			<form>
+			<select size="1">
+				 <option> Select your favorite browser</option>
+				<option value="Chrome"> Chrome </option>
+				<option value="Firefox"> Firefox </option>
+				<option value="Edge"> Edge </option>
+				</select>
+			</form>
+			
+			<br><br><br>
+			
+			<form>
+			<select size="4">
+				<option value="index.html"> Home </option>
+				<option value="products.html"> Products </option>
+				<option value="services.html"> Services </option>
+				<option value="about.html"> About </option>
+				<option value="contact.html"> Contact </option>
+			</select>
+			
+			</form>
+			<p> The size attribute for the select tag determines how many options are visible in the list without having to interact with it. If you want the entire list to show, increase the size value to the number of objects in your list. </p>
+</main>
+</body>
+</html>  
+				
